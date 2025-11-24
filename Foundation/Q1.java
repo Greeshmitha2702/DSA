@@ -1,5 +1,5 @@
 //to find out a sequrnce of n numbers as prime or not
-package Foundation;
+package DSA.Foundation;
 import java.util.Scanner;
 public class Q1{
     public static void main(String[] args) {

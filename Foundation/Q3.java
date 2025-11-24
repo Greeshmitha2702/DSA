@@ -1,5 +1,5 @@
 //To print Fibonacci series up to n terms
-package Foundation;
+package DSA.Foundation;
 import java.util.Scanner;
 public class Q3 {
     public static void main(String[] args) {

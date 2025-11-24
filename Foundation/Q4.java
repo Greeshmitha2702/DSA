@@ -1,5 +1,5 @@
 //To count number of digits in a number
-package Foundation;
+package DSA.Foundation;
 
 import java.util.Scanner;
 
