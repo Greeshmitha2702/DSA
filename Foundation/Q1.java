@@ -1,4 +1,4 @@
-//to find out a sequrnce of n numbers as prime or not
+//to find out a sequence of n numbers as prime or not
 package DSA.Foundation;
 import java.util.Scanner;
 public class Q1{
