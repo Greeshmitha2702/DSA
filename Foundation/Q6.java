@@ -1,5 +1,5 @@
 //to print reverse of a number
-package DSA.Foundation;
+package Foundation;
 
 import java.util.Scanner;
 

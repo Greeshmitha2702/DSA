@@ -1,7 +1,7 @@
 //rotation of a number
 //positive rotation->clockwise
 //negative rotation->anticlockwise
-package DSA.Foundation;
+package Foundation;
 public class Q8 {
     public static void main(String[] args) {
         int number=12345;

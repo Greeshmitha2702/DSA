@@ -7,7 +7,7 @@
 //this continues till nth pass
 //solution: only perfect square numbered bulbs will remain on
 //because they have odd number of factors, while non-perfect squares have even number of factors
-package DSA.Foundation;
+package Foundation;
 import java.util.Scanner;
 public class Q12 {
     public static void main(String[] args) {

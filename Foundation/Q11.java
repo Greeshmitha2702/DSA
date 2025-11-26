@@ -1,5 +1,5 @@
 //To check if given numbers are pythogorean triplet or not
-package DSA.Foundation;
+package Foundation;
 import java.util.Scanner;
 public class Q11 {
     public static void main(String[] args) {

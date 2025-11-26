@@ -1,7 +1,7 @@
 //To print inverse of a number
 //number should be such that no digit occurs more than once and no missing digits
 //to replace that digit at its place value
-package DSA.Foundation;
+package Foundation;
 
 public class Q7 {
     public static void main(String[] args) {

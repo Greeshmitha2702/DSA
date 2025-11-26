@@ -1,5 +1,5 @@
 //GCD and LCM of two numbers
-package DSA.Foundation;
+package Foundation;
 import java.util.Scanner;
 public class Q9 {
     public static void main(String[] args) {
