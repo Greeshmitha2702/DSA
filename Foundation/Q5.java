@@ -1,5 +1,5 @@
 //To print the digits of a number(from left to right)
-package DSA.Foundation;
+package Foundation;
 import java.util.Scanner;
 public class Q5 {
     public static void main(String[] args) {

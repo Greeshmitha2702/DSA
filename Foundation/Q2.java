@@ -1,5 +1,5 @@
 //To print prime numbers in the given range
-package DSA.Foundation;
+package Foundation;
 import java.util.Scanner;
 public class Q2 {
     public static void main(String[] args) {
