@@ -12,10 +12,10 @@ public class Q5 {
             int k=Math.abs(mid-i);
             int l=n-2*k;
             for(int j=0;j<k;j++){
-                System.out.print(" ");
+                System.out.print("\t");
             }
             for(int j=0;j<l;j++){
-                System.out.print("*");
+                System.out.print("*\t");
             }
             System.out.println();
         }
