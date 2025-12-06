@@ -1,3 +1,4 @@
+//to check if the expression has duplicate parenthesis or not
 package Stack;
 
 import java.util.*;
