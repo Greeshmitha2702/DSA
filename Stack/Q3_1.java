@@ -1,7 +1,6 @@
-//next greater element
 package Stack;
 import java.util.*;
-public class Q3 {
+public class Q3_1 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
@@ -11,21 +10,22 @@ public class Q3 {
         }
         int[] sol=new int[arr.length];
         Stack<Integer> stack = new Stack<>();
-        //right to left approach
-        //pop, answer and push
-        sol[arr.length-1]=-1;
-        stack.push(arr[arr.length-1]);
-        for(int i=arr.length-2; i>=0; i--){
-            while(!stack.isEmpty() && stack.peek()<arr[i]){
+        //left to right approach
+        stack.push(0);
+        for(int i=1; i<arr.length;i++){
+            while(!stack.isEmpty() && arr[i]>arr[stack.peek()]){
+                int pos=stack.peek();
+                sol[pos]=arr[i];
                 stack.pop();
             }
-            if(stack.isEmpty())
-                sol[i]=-1;
-            else
-                sol[i]=stack.peek();
-            stack.push(arr[i]);
+            stack.push(i);
         }
-        for(int i=0;i<sol.length;i++){
+        while(!stack.isEmpty()){
+            int pos=stack.peek();
+            sol[pos]=-1;
+            stack.pop();
+        }
+        for(int i=0;i<arr.length;i++){
             System.out.print(sol[i]+" ");
         }
         sc.close();
