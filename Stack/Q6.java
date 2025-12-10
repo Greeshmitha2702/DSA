@@ -34,6 +34,7 @@ public class Q6 {
         int k = sc.nextInt();
         int j = 0;
         for(int i = 0; i <= arr.length - k; i++){
+            //to bring j inside the window(if j is lagging behind)
             if(j < i){
                 j = i;
             }
