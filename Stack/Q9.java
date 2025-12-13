@@ -1,0 +1,56 @@
+//postfix evaluation and conversion to infix and prefix
+package Stack;
+
+import java.util.Scanner;
+import java.util.Stack;
+
+public class Q9 {
+ public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter postfix expression");
+    String exp = sc.nextLine();
+
+    Stack<Integer> valueStack = new Stack<>();
+    Stack<String> infix = new Stack<>();
+    Stack<String> prefix = new Stack<>();
+
+    for(int i = 0; i < exp.length(); i++){
+        char ch = exp.charAt(i);
+        if(ch == '+' || ch == '-' || ch =='*' || ch == '/'){
+            int value2 = valueStack.pop();
+            int value1 = valueStack.pop();
+            int value = operation(value1, value2, ch);
+            valueStack.push(value);
+
+            String iv2 = infix.pop();
+            String iv1 = infix.pop();
+            String iv = '(' + iv1 + ch + iv2 + ')';
+            infix.push(iv);
+
+            String pv2 = prefix.pop();
+            String pv1 = prefix.pop();
+            String pv = ch + pv1 + pv2;
+            prefix.push(pv);
+        }
+        else{
+            valueStack.push(ch - '0');
+            infix.push(ch+"");
+            prefix.push(ch+"");
+        }
+    }
+    System.out.println("value:"+valueStack.pop());
+    System.out.println("Infix:"+infix.pop());
+    System.out.println("prefix:"+prefix.pop());
+    sc.close();
+ }
+ public static int operation(int v1, int v2, int operator){
+    if(operator == '+')
+        return v1+v2;
+    else if(operator == '-')
+        return v1-v2;
+    else if(operator == '*')
+        return v1*v2;
+    else
+        return v1/v2;
+ } 
+}
