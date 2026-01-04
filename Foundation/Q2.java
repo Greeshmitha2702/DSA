@@ -14,8 +14,12 @@ public class Q2 {
         boolean[] isPrime=new boolean[n+1];
         for(int i=2;i<=n;i++)
             isPrime[i]=true;
-        if(n<2)
+        //edge case - return if n<2
+        //if return is not used, loop condition is checked, atleat once
+        if(n<2){
             System.out.println("There are no prime numbers in this range");
+            return;
+        }
         for(int i=2;i*i<=n;i++){
             if(isPrime[i]){
                 int p=i*i;
