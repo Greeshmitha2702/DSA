@@ -10,6 +10,10 @@ public class Q10 {
                 System.out.print(div+" ");
                 number/=div;
             }
+            // optimization to break early
+            if(number==1){
+                break;
+            }
         }
         if(number>1){
             System.out.print(number);
