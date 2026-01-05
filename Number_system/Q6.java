@@ -17,15 +17,13 @@ public class Q6 {
             int d1=n1%10;
             int d2=n2%10;
             int diff=0;
-            d1+=carry;
-            if(d1>=d2){
-                diff=d1-d2;
+            if(d1 + carry>=d2){
+                diff=d1+carry-d2;
                 carry=0;
             }
             else{
+                diff=d1+carry+base-d2;
                 carry=-1;
-                d1+=base;
-                diff=d1-d2;
             }
             res+=diff*power;
             power*=10;
