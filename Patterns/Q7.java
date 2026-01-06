@@ -9,9 +9,6 @@ public class Q7 {
                 System.out.print("\t");
             }
             System.out.print("*\t");
-            for(int j=0;j<n-1-i;j++){
-                System.out.print("\t");
-            }
             /*
             if(i==j){
                 System.out.print("*");
