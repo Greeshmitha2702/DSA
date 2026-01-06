@@ -8,9 +8,6 @@ public class Q8 {
                 System.out.print("\t");
             }
             System.out.print("*\t");
-            for(int j=0;j<i;j++){
-                System.out.print("\t");
-            }
             /*
             if(i+j==n+1){
                 System.out.print("*");
