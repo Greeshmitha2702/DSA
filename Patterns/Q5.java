@@ -7,7 +7,6 @@ package Patterns;
 public class Q5 {
     public static void main(String[] args) {
         int n=5;
-        int mid=n/2;
         int spaces = n/2;
         int stars = 1;
         for(int i=0;i<n;i++){
