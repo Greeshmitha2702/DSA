@@ -13,4 +13,4 @@ for i in range(k,n):
     sum += arr[i]
     sum -= arr[i-k]
     maxSum = max(maxSum, sum)
-print("Maximum average of sub array: ",maxSum/n)
+print("Maximum average of sub array: ",maxSum / k)
