@@ -38,17 +38,15 @@ public class Q5 {
             j--;
             k--;
         }
+        //to remove leading zeros and print result
         int l=0;
         while(l<res.length){
             if(res[l]==0)
                 l++;
             else
-                break;
-        }
-        while(l<res.length){
-            System.out.println(res[l]);
+                System.out.print(res[l]);
             l++;
-        }
+        }        
         sc.close();
     }
 }

@@ -1,4 +1,4 @@
-// Count the number of times a digit appears in a number
+// Count the number of times a digit appears in a number n
 package Number_system;
 
 import java.util.Scanner;

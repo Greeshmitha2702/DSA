@@ -8,6 +8,10 @@ public class Q1{
         int n=s.nextInt();
         for(int i=0;i<n;i++){
             int t=s.nextInt();
+            if(t<=1){
+                System.out.println(t+" is not a prime number");
+                continue;
+            }
             int count=0;
             for(int j=2;j*j<=t;j++){
                 if(t%j==0){
