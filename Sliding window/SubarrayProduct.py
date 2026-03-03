@@ -12,5 +12,6 @@ for r in range(n):
     while product >= k:
         product //= arr[l]
         l += 1
-    count += (r - l + 1)
+    count += (r - l + 1) #number of subarrays ending at r and starting from l to r. 
+    #If window[l..r ] is valid, then its subarrays are [l..r], [l+1..r], ..., [r..r] are also valid.
 print("No of such sub arrays: ",count)
