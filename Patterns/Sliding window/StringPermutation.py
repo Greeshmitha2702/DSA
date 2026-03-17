@@ -1,5 +1,9 @@
+#String Permutation using Sliding Window
+#Given two strings s1 and s2, return true if s2 contains a 
+#permutation of s1, or false otherwise.
+#eg: s1 = "abc", s2 = "cbabcabcadef" -> true, because s2 contains "cba", "bac", "abc" which are permutations of s1.
 s1 = "abc"
-s2 = "cbabcabcadef"
+s2 = "cbaccabcadef"
 windowSize = len(s1)
 s1Count = [0] * 26
 s2Count = [0] * 26
