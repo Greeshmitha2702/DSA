@@ -13,7 +13,7 @@ public class Q1 {
         }
         int maxEle=arr[0];
         int minEle=arr[0];
-        for(int i=01;i<arr.length;i++){
+        for(int i=1;i<arr.length;i++){
             if(arr[i]>maxEle){
                 maxEle=arr[i];
             }
